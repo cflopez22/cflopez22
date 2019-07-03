@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <title>VitalNova</title>
+    
+
+  </head>
+  <header>
+    <div class="contenedor">
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="ejercicios.html">Ejercicios</a></li>
+          <li><a href="somos.html">¿Quienes Somos?</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <body>
+    <!-- Portfolio section -->
+    <section id="tmPortfolio">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="tm-portfolio-item">
+              <div class="tm-portfolio-name text-white tm-bg-green">
+                ¿Por que se hace?
+              </div>
+              <div class="tm-portfolio-description">
+                <img src="img/problema.jpg" width="350" alt="">
+                <h3 class="tm-text-green">
+                  Problematica 
+                </h3>
+                <p class="mb-0">
+                  En la actualidad la falta de ejercicio repercute en nuestra salud, provocando enfermedades  como diabetes, sobrepeso, y hasta muerte prematura, esto se produce ya sea por pereza al pensar que estar en su zona de confort es mejor, por falta de tiempo debido al trabajo, al estudio o dinero ya que la situación económica esta difícil hoy en día.
+                </p>
+              </div>
+            </div>
+
+            <div class="tm-portfolio-item">
+              <div class="tm-portfolio-name text-white tm-bg-orange">
+                El punto ideal
+              </div>
+              <div class="tm-portfolio-description">
+                <img src="img/ideal.jpg" width="350" alt="">
+                <h3 class="tm-text-orange">
+                  Estado ideal
+                </h3>
+                <p class="mb-0">
+                  Se estima que los estudiantes se sientan motivados a hacer ejercicio en sus tiempos libres, teniendo en cuenta la gran herramienta que brinda el SENA y que con planes de entrenamiento esos mismos estudiantes sincronicen cuerpo y mente, además de mejorar su salud, su disciplina, su forma de ver y de pensar, influye en la organización de su vida, en una buena alimentación y en una vida sana.
+                </p>
+              </div>
+            </div>
+
+            <div class="tm-portfolio-item">
+              <div class="tm-portfolio-name text-white tm-bg-blue">
+                A quienes va dirigido
+              </div>
+              <div class="tm-portfolio-description">
+                <img src="img/ejercicico.jpg" width="350" alt="">
+                <h3 class="tm-text-blue">
+                 Delimitacion
+                </h3>
+                <p class="mb-0">
+                  El proyecto se llevará a cabo en el SENA, sede de la 52 (CGMLTI), específicamente en el área de cultura física en dónde se realiza el levantamiento de información necesario para identificar las necesidades del cliente y que estén involucradas en el desarrollo del proyecto.
+
+                </p>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End portfolio section -->
+
+       <div class="row">
+        <footer class="col-12">
+          <p class="text-center tm-copyright-text">
+           Copyright 2019 Vital Nova 
+            
+          - Design: <a rel="nofollow" href="">Vital Nova</a></p>
+        </footer>
+       </div>    
+    <!-- section -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script>
+      function detectMsBrowser() {
+        using_ms_browser =
+          navigator.appName == "Microsoft Internet Explorer" ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Edge") > -1) ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Trident") > -1);
+
+        if (using_ms_browser == true) {
+          alert(
+            "Please use Chrome or Firefox for the best browsing experience!"
+          );
+        }
+      }
+      function setBrandMarginTop() {
+        var bottomContainerHeight = $(".tm-welcome-container").height();
+
+        $(".tm-brand-container-outer").css({
+          "margin-top": -bottomContainerHeight + "px"
+        });
+      }
+
+      $(function() {
+        setBrandMarginTop();
+        detectMsBrowser();
+
+        // Handle window resize event
+        $(window).resize(function() {
+          setBrandMarginTop();
+        });
+      });
+    </script>
+  </body>
+</html>
